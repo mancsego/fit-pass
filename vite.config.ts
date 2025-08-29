@@ -12,10 +12,10 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'FT | Mancsego',
-        short_name: 'FT | Mancsego',
-        description: 'Fitness tracker | Mancsego',
-        theme_color: '#e0f7fa',
+        name: 'Fit Pass',
+        short_name: 'Fit Pass',
+        description: 'Fit Pass',
+        theme_color: '#FFF',
         display: 'standalone',
         icons: [
           {

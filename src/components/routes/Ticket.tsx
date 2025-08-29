@@ -11,7 +11,7 @@ export default function Ticket() {
         </Link>
         <h1>Check-in Ticket</h1>
       </div>
-      <div className="relative bg-gradient-to-br text-white rounded-2xl from-fitpass-green/80 to-fitpass-green/100 mt-25">
+      <div className="relative bg-gradient-to-br text-white rounded-2xl from-fitpass-ticket/80 to-fitpass-ticket mt-25">
         <div className="flex justify-between py-5 border-b-2 border-dashed px-4 mt-20">
           <div>
             <div>
