@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-fitpass-green: #4aa4b3;
+  --color-fitpass-grey: #707070;
+}
+
+@layer base {
+  body {
+    @apply py-4 bg-white;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold;
+  }
+  h1 {
+    @apply text-2xl tracking-wide;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+}
+
+@layer components {
+  #search {
+    @apply py-2 px-4 border border-fitpass-grey rounded-full;
+  }
+  section {
+    @apply mt-10;
+  }
+}
