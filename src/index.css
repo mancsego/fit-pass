@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-fitpass-green: #2c5d67;
-  --color-fitpass-ticket: rgb(38, 134, 148);
+  --color-fitpass-green: #163940;
+  --color-fitpass-ticket: #268694;
   --color-fitpass-grey: #707070;
 }
 

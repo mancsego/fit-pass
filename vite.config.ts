@@ -11,39 +11,63 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.destination === 'image',
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'images-cache',
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 365 * 24 * 60 * 60,
+              },
+            },
+          },
+        ],
+      },
       manifest: {
+        id: 'fit-pass',
         name: 'Fit Pass',
         short_name: 'Fit Pass',
         description: 'Fit Pass',
         theme_color: '#FFF',
         display: 'standalone',
+        start_url: '/fit-pass/',
         icons: [
           {
-            src: 'pwa-64x64.png',
-            sizes: '64x64',
-            type: 'image/png',
-          },
-          {
-            src: 'pwa-192x192.png',
+            src: 'icons/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'pwa-512x512.png',
+            src: 'icons/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any',
           },
           {
-            src: 'maskable-icon-512x512.png',
+            src: 'icons/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',
           },
         ],
+        screenshots: [
+          {
+            src: 'screens/screen_1.png',
+            sizes: '1082x2402',
+            type: 'image/png',
+          },
+        ],
       },
       devOptions: {
-        enabled: false,
+        enabled: true,
       },
     }),
   ],

@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/fit-pass/dev-sw.js?dev-sw', { scope: '/fit-pass/', type: 'classic' })

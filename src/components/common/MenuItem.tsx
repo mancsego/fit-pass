@@ -9,7 +9,7 @@ export default function MenuItem({
 }) {
   return (
     <div className="flex flex-col justify-center items-center mx-1">
-      <Icon id={icon} className="size-8" />
+      <Icon id={icon} className="size-5" />
       <div className="h-10">{title}</div>
     </div>
   )
