@@ -14,16 +14,16 @@
   h2,
   h3,
   h4 {
-    @apply font-semibold;
+    @apply font-semibold mb-2;
   }
   h1 {
-    @apply text-2xl tracking-wide;
+    @apply text-xl tracking-wide;
   }
   h2 {
-    @apply text-xl;
+    @apply text-base;
   }
   h3 {
-    @apply text-lg;
+    @apply text-base;
   }
 }
 
@@ -32,6 +32,6 @@
     @apply py-2 px-4 border border-fitpass-grey rounded-full;
   }
   section {
-    @apply mt-10;
+    @apply mt-3;
   }
 }

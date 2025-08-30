@@ -8,7 +8,7 @@ export default function FavoriteEntry({
   open: boolean
 }) {
   return (
-    <div className="flex flex-col items-center mr-4 my-4">
+    <div className="flex flex-col items-center mr-4 my-4 text-xs">
       <img
         src={image}
         alt={name}

@@ -26,7 +26,7 @@ const recents = [
 
 export default function RecentSection() {
   return (
-    <section className="ml-4">
+    <section className="ml-4 pb-6">
       <h2>Last Visited</h2>
       <div className="flex overflow-scroll">
         {recents.map((f) => (

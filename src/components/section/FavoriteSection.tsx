@@ -11,7 +11,7 @@ const favorites = [
 
 export default function FavoiteSection() {
   return (
-    <section className="mx-4">
+    <section className="mx-4 pb-4">
       <h2>Favoite location</h2>
       <div className="flex">
         {favorites.map((f) => (
