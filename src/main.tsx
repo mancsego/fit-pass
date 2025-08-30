@@ -1,3 +1,4 @@
+import Login from '@/components/routes/Login'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter } from 'react-router'
@@ -6,6 +7,7 @@ import App from './App'
 import Home from './components/routes/Home'
 import Ticket from './components/routes/Ticket'
 import './index.css'
+
 const router = createBrowserRouter([
   {
     path: '/fit-pass',
@@ -13,6 +15,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, Component: Home },
       { path: 'ticket', Component: Ticket },
+      { path: 'login', Component: Login },
     ],
   },
 ])

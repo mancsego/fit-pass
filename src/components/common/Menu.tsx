@@ -7,7 +7,7 @@ export default function Menu() {
     <footer className="mx-4 mt-2 flex justify-between items-start text-fitpass-grey">
       <MenuItem title="Home" icon="home" />
       <MenuItem title="Sessions" icon="sessions" />
-      <Link to="/fit-pass/ticket" className="size-12">
+      <Link to="/fit-pass/login" className="size-12">
         <img src={login} alt="login" />
       </Link>
       <MenuItem title="Online" icon="online" />

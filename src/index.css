@@ -34,4 +34,7 @@
   section {
     @apply mt-3;
   }
+  .html5-qrcode-element {
+    @apply p-2 border my-2 no-underline! min-w-42;
+  }
 }
