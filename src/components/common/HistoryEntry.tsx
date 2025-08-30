@@ -15,7 +15,7 @@ export default function HistoryEntry({
   const moreText = tagCount > 1 ? `+ ${tagCount - 1} more` : ''
   const tagElement = tagCount ? `${tags![0]} ${moreText}` : null
   return (
-    <div className="shrink-0 mr-6 pb-3 w-70 relative">
+    <div className="shrink-0 mr-6 pb-3 w-64 relative">
       <img src={image} alt={name} className="w-full h-34 rounded-2xl" />
       <div className="font-bold text-sm my-2">{name}</div>
       <Icon

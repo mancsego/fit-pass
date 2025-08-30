@@ -8,8 +8,8 @@ import RecentSection from '@/components/section/RecentSection'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-stretch">
-      <header className="mx-4 mb-5 relative">
+    <div className="flex flex-col h-screen">
+      <header className="mx-4 mt-4 mb-5 relative">
         <div className="flex justify-end gap-4 mb-5 ">
           <img src={alarm} alt="alarm" className="size-10" />
           <img src={portrait} alt="portrait" className="rounded-full size-10" />
@@ -25,7 +25,7 @@ export default function Home() {
           className="absolute size-6 top-18 left-4 text-fitpass-grey"
         />
       </header>
-      <main>
+      <main className="grow">
         <RecentSection />
         <FavoiteSection />
         <ReferenceCard />
